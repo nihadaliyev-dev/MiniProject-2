@@ -1,0 +1,112 @@
+$screen-xl-desktop: 1400px;
+$screen-xxl-desktop: 1360px;
+$screen-lg-desktop: 1220px;
+$screen-md-desktop: 1024px;
+$screen-lg-tablet: 900px;
+$screen-tablet: 768px;
+$screen-mobile_lg: 610px;
+$screen-mobile: 500px;
+$screen-mobile_xs: 391px;
+$screen-mobile_xxs: 367px;
+
+// height
+$screen-lg-h: 990px;
+
+@mixin xl_desktop {
+  @media (max-width: #{$screen-xl-desktop}) {
+    @content;
+  }
+}
+
+@mixin xxl_desktop {
+  @media (max-width: #{$screen-xxl-desktop}) {
+    @content;
+  }
+}
+
+@mixin lg_desktop {
+  @media (max-width: #{$screen-lg-desktop}) {
+    @content;
+  }
+}
+
+@mixin md_desktop {
+  @media (max-width: #{$screen-md-desktop}) {
+    @content;
+  }
+}
+@mixin xs_mobile {
+  @media (max-width: #{$screen-mobile_xs}) {
+    @content;
+  }
+}
+@mixin xxs_mobile {
+  @media (max-width: #{$screen-mobile_xxs}) {
+    @content;
+  }
+}
+@mixin lg_tablet {
+  @media (max-width: #{$screen-lg-tablet}) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (max-width: #{$screen-tablet}) {
+    @content;
+  }
+}
+
+@mixin mobile_lg {
+  @media (max-width: #{$screen-mobile_lg}) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media (max-width: #{$screen-mobile}) {
+    @content;
+  }
+}
+
+// height
+@mixin lg_height {
+  @media (min-height: #{$screen-lg-h}) {
+    @content;
+  }
+}
+
+// flexbox
+@mixin flexBox($direction: row, $justify: center, $align: center, $gap: 0) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+  gap: $gap;
+}
+
+//Typography
+@mixin typography($weight: 400, $size: 16px, $line: 24px, $color: black) {
+  font-weight: $weight;
+  font-size: $size;
+  line-height: $line;
+  color: $color;
+}
+
+// Visible line count
+@mixin lineCount($lines) {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: $lines;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: normal;
+}
+
+@mixin lato-typography($weight: 400, $size: 16px, $line: 24px, $color: black) {
+  font-family: "Lato", sans-serif;
+  font-weight: $weight;
+  font-size: $size;
+  line-height: $line;
+  color: $color;
+}

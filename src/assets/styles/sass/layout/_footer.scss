@@ -1,0 +1,37 @@
+.footer {
+  position: absolute;
+  margin-top: 120px;
+  z-index: 49;
+  .footer__main {
+    padding: 12px 20px 0 20px;
+    a {
+      color: #646464;
+      font-size: 16.4px;
+      line-height: 28px;
+    }
+    .footer__main__main {
+      > div {
+        width: 25%;
+      }
+      .footer__main__service__header {
+        font-size: 16px;
+        line-height: 28px;
+        color: #646464;
+        font-weight: 400;
+      }
+      .footer__main__service__number {
+        font-size: 22.7px;
+        font-weight: bold;
+      }
+    }
+  }
+  .footer__footer {
+    .footer__footer__main {
+      .footer__footer__socials {
+        a {
+          padding: 16px !important;
+        }
+      }
+    }
+  }
+}

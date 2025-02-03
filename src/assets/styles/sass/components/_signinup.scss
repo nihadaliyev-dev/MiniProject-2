@@ -1,0 +1,49 @@
+.signinupBox {
+  padding: 32px 28px;
+  max-width: 440px;
+  width: 100%;
+  input {
+    --tw-border-opacity: 1;
+    border-color: #d1d5db;
+    border-color: rgba(209, 213, 219, var(--tw-border-opacity));
+    border-radius: 0.5rem;
+    font-size: 0.875rem;
+    padding: 1rem 1.5rem;
+    width: 100%;
+    border-width: 1px;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    font-weight: 500;
+    outline: none;
+  }
+  a {
+    color: #bb7dfb;
+    font-weight: 500;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+  button {
+    padding: 1rem 2rem;
+    border-radius: 0.5rem;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    font-weight: 700;
+  }
+}
+.modal__header {
+  padding: 0 0 24px 0;
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  font-weight: 700;
+}
+.modal__footer {
+  margin-top: 1.25rem;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  font-weight: 500;
+  text-align: center;
+}
+
+#registerCloseBtn {
+  padding: 20px;
+}

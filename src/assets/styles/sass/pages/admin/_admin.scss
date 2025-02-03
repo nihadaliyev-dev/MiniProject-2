@@ -1,0 +1,51 @@
+.admin__content {
+  box-shadow: 0px 0px 20px #fbfbfb50;
+  scrollbar-width: 4px;
+  &::-webkit-scrollbar {
+    width: 4px;
+    border-radius: 4px;
+  }
+  &::-webkit-scrollbar-track {
+    background: #212121;
+    border-radius: 4px;
+  }
+  &::-webkit-scrollbar-thumb {
+    background: #ffdc00;
+    border-radius: 4px;
+    box-shadow: 0px 0px 12px #ffdc00;
+  }
+}
+#admin__eventForm {
+  > div {
+    input,
+    select,
+    button {
+      padding: 12px 20px;
+      border: 2px solid #fbfbfb;
+      border-radius: 12px;
+      background-color: #fbfbfb20;
+      outline: none;
+      color: #fbfbfb;
+      transition: all ease-in-out 400ms;
+    }
+    input:focus,
+    select:focus,
+    button:not(:last-child):hover {
+      background-color: #fbfbfb;
+      color: #212121;
+    }
+    label {
+      color: #fbfbfb;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 22px;
+    }
+  }
+  button[type="submit"] {
+    border-color: #ffdc00;
+  }
+  button[type="submit"]:hover {
+    background-color: #ffdc00;
+    color: #212121;
+  }
+}

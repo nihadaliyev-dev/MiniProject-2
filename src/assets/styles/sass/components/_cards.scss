@@ -1,0 +1,7 @@
+.eventCard {
+  transition: all ease-in 300ms;
+  cursor: pointer;
+}
+.eventCard:hover {
+  box-shadow: 0px 0px 12px #ffdd00;
+}
